@@ -7,7 +7,7 @@ public class StudentTest {
 	// 다른 class 에 정의된 Student class 를 호출할 수 있음.
 		
 	// class 를 수행(run 구동부분)하기 위한 main method 로서 형식이 동일함.
-	// 하지만 main 부분은 Student 의 method 라고 부르지 않음.
+	// 하지만 main 부분은 Class(Student) 의 method 라고 부르지 않음.
 	// 또한 이 main method 가 항상 같은 java 파일에 있는 것이 아니라,
 	// 다른 class(StudentTest.java) 에서 호출하는 것도 가능함. 
 		
@@ -33,8 +33,8 @@ public class StudentTest {
 		System.out.println(studentKim);  // classpart.Student@368239c8
 		// classpart.Student 는 Studnet class 의 패키지 이름까지 포함한 풀네임.
 		// 77556fd 와 368239c8 는 16진수로 4byte * 8자리 = 32bit 의 address(참조값).
-		// studentLee, studentKim 가 stack 에서 
-		// Heap 에 저장된 각각의 멤버변수의 주소를 가르키고 있음.
+		// studentLee, studentKim(지역변수) 가 stack 에서 
+		// Heap 에 저장된 각각의 멤버변수(인스턴스)의 주소를 가르키고 있음.
 	}
 	
 }

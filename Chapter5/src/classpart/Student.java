@@ -18,7 +18,8 @@ public class Student {
 	// 필요하다면 직접 코딩(public Student() {} )하여 사용할 수 있음.
 	// 이 개체가 생성될때 기본적으로 하고 싶은 일들을 구현.
 
-	// id 와 이름을 매개변수로 입력받는 생성자.
+	// id 와 name 을 매개변수로 입력받는 생성자.
+	// 생성자는 method 가 아님.
 	public Student(int id, String name) {
 		studentID = id;
 		studentName = name;
