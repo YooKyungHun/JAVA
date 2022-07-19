@@ -1,4 +1,4 @@
-package inheritance;
+package witharraylist;
 
 public class Customer {
 
@@ -24,7 +24,7 @@ public class Customer {
 		this.customerName = customerName;
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
-		System.out.println("Customer(int, String) 호출됨");
+		System.out.println("Customer(int, String) 호출됨 " + customerName);
 
 	}
 	

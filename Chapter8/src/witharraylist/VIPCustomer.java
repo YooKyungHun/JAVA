@@ -1,4 +1,4 @@
-package inheritance;
+package witharraylist;
 
 public class VIPCustomer extends Customer{
 
@@ -31,7 +31,7 @@ public class VIPCustomer extends Customer{
 		// saleRatio = 0.1; this.agentID = agentID; 로 재설정됨.
 
 		
-		System.out.println("VIPCustomer(int, String) 호출됨");
+		System.out.println("VIPCustomer(int, String) 호출됨 " + customerName);
 
 	}
 	// 고객의 초기 등급은 "VIP", 보너스비율은 0.05
@@ -51,12 +51,22 @@ public class VIPCustomer extends Customer{
 	// 가격할인이 들어가기 때문에, 메서드 오버라이딩을 해줌.
 	
 	
-	
-	
-	
 	public int getAgentID() {
 		return agentID;
 	}
+
+
+	@Override
+	public String showCustomerInfo() {
+		return super.showCustomerInfo() + " 담당 상담원의 ID 는" + agentID + "입니다.";
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 }
 
