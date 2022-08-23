@@ -54,9 +54,11 @@ public class AnimalTest {
 	public void moveAnimal(Animal animal) {
 	// Animal animal = new Human(); (업캐스팅)후
 	// moveAnimal(animal) 한것과 같음.
+	// Human(), Tiger(), Eagle() 이 Animal class 로서 들어가는 것.
 	// 즉, animal 은 상위클래스로 선언되어, Animal 의 참조변수와 메서드만 접근가능하지만,
 	// move() 라는 메서드가 하위클래스에서 재정의(overriding) 되어있어서, 
-	// 각각 하위클래스에서 재정의된 move() 가 호출된 것.
+	// 각각 하위클래스에서 재정의된 move() 가 호출됨.
+	// 재정의되지 않은 hunting, readBook 은 호춟불가능.
 	// 다형성과 분리하지말고, 상속, overriding, 가상함수 의 큰 흐름으로 이해할 것. 
 	
 		animal.move();
@@ -83,7 +85,7 @@ public class AnimalTest {
 		// 따라서 하위클래스의 메서드인(readBook, hunting, flying) 을 사용할 수 없음.
 		// 이때 굳이 쓰고자한다면 다운캐스팅을 해서 명시적 형변환을 해주어야함.
 		// 다운캐스팅보단 overriding 코딩이 더 좋음.
-		
+		// instanceof 는 다운캐스팅시 인스턴스의 타입을 체크하는 예약어.
 		
 	}
 	// 다형성
